@@ -1,5 +1,4 @@
-import React, { Fragment } from "react";
-//import logo from './logo.svg';
+import React from "react";
 import "./App.css";
 
 import Home from "./pages/Home";
@@ -15,12 +14,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <switch>
+      <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/rooms/" component={Rooms} />
         <Route exact path="/rooms/:panda" component={SingleRoom} />
         <Route component={Error} />
-      </switch>
+      </Switch>
     </>
   );
 }
