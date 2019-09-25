@@ -7,11 +7,15 @@ import * as serviceWorker from "./serviceWorker";
 //set up the Router
 import { BrowserRouter as Router } from "react-router-dom";
 
+//add RoomProvider
+import { RoomProvider } from "./context";
 //wrap the app into Router
 ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
+  <RoomProvider>
+    <Router>
+      <App />
+    </Router>
+  </RoomProvider>,
   document.getElementById("root")
 );
 
