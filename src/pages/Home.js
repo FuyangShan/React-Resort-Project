@@ -19,7 +19,7 @@ export default function Home() {
         </Banner>
       </Hero>
       <Services />
-      <FeateredRooms />
+      <FeaturedRooms />
     </>
   );
 }
